@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpine example</title>
+  </head>
+  <body>
+    <div x-data="loop">
+      <ul>
+        <template x-for="name in names">
+          <li><p x-text="name"></p></li>
+        </template>
+      </ul>
+      <br />
+      <h2>Mostrar datos de API</h2>
+      <button type="submit" @click="getMemes">Peliculas -> estrenos</button>
+      <ul class="gallery">
+        <template x-for="meme in memes">
+          <li>
+            <a href="">
+              <img
+                :src="`https://image.tmdb.org/t/p/original/${meme.backdrop_path}`"
+                alt=""
+                srcset=""
+                width="300"
+              />
+              <p x-text="meme.title"></p>
+            </a>
+          </li>
+        </template>
+      </ul>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

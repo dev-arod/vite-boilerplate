@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <section class="banner">
+      <div x-data="navigation()">
+        <header class="header">
+          <section class="logo"><a href="">r2Dev</a></section>
+
+          <nav class="navigation">
+            <svg
+              class="navigation__small"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M14 19h-14v-1h14v1zm9.247-8.609l-3.247 4.049-3.263-4.062-.737.622 4 5 4-5-.753-.609zm-9.247 2.609h-14v-1h14v1zm0-6h-14v-1h14v1z"
+              />
+            </svg>
+            <ul class="navigation__large">
+              <li>YO</li>
+              <li>RESUME</li>
+              <li>PORTAFOLIO</li>
+              <li>SERVICIOS</li>
+              <li>BLOG</li>
+              <li>CONTACTO</li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <section class="banner__main">
+        <article class="banner__me-photo--small">
+          <img alt="me" srcset="" id="smallpic" />
+        </article>
+        <article class="banner__me">
+          <h2>
+            Hola soy Arturo,
+            <span class="banner__me--colorful">
+              creativo desarrollador full stack</span
+            >
+          </h2>
+
+          <p class="banner__me--description">
+            I design and develop services for customers of all sizes,
+            specializing in creating stylish, modern websites, web services and
+            online stores. My passion is to design digital user experiences
+            through the bold interface and meaningful interactions.
+          </p>
+        </article>
+        <article class="banner__me-photo--large">la foto</article>
+      </section>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

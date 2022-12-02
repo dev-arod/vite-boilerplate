@@ -1,0 +1,51 @@
+.banner {
+  min-height: 100vh;
+  width: 100%;
+  &__main {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-inline: 1.25rem;
+  }
+
+  &__me {
+    h2 {
+      color: #fff;
+      font-size: 44px;
+      font-weight: 600;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+
+  &__me--colorful {
+    color: #fff;
+    display: block;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 1.2;
+    background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+    outline: none;
+    box-sizing: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__me--description {
+    display: block;
+    font-size: 1.5rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;
+  }
+  &__me-photo--small {
+    display: block;
+    margin-bottom: 1.5rem;
+    img {
+      margin-inline: auto;
+    }
+  }
+  &__me-photo--large {
+    display: none;
+  }
+}

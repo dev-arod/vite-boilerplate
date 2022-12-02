@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&family=Rubik:wght@300;400;600&display=swap');
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 44px;
+  color: var(--primary-color-400);
+}
+
+h2 {
+  font-size: 38px;
+  color: var(--primary-color-400);
+}
+
+p {
+  color: var(--primary-color-400);
+}
+
+nav {
+  font-family: 'Rubik', sans-serif;
+}
+
+.logo {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
